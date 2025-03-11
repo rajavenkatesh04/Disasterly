@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0efd0493-2564-4c33-8727-5e8ec028ad95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ui/Navbar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HomePage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/ActionButtons.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/Buttons.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/EmergencyContacts.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/LeafletMap.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useSocket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/mongodb/connection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/mongodb/models/Resource.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/mongodb/models/ResourceRequest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/mongodb/models/Users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/api/resources/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/api/socket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Navbar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +36,9 @@
   "associatedIndex": 5
 }]]></component>
   <component name="ProjectId" id="2uAy8IHlBRyBk0zQnkTfU2Jjicn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1741705512119</updated>
-      <workItem from="1741705513225" duration="1390000" />
+      <workItem from="1741705513225" duration="13582000" />
     </task>
     <servers />
   </component>
