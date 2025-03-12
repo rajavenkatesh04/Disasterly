@@ -304,7 +304,7 @@ export default function LiveDisasterMap() {
         }
     };
 
-    // NEW FUNCTION: Fetch flood data from multiple sources
+    // Function to fetch flood data from multiple sources
     const fetchFloodData = async () => {
         try {
             const floods = [];
@@ -586,39 +586,10 @@ export default function LiveDisasterMap() {
                 }
             }
 
-            // 5. Add some simulated flood data for demo purposes if no real data was found
-            // Remove this in a production environment!
+            // If no flood data is found, log a warning and return an empty array
             if (floods.length === 0) {
-                console.warn("No real flood data found, adding simulated data for demonstration");
-
-                // Sample flood-prone areas around the world
-                const floodProneAreas = [
-                    { name: "Bangladesh Delta", lat: 23.8, lng: 90.4, severity: 4 },
-                    { name: "Mississippi Basin, USA", lat: 29.9, lng: -90.1, severity: 3 },
-                    { name: "Ganges Basin, India", lat: 25.3, lng: 83.0, severity: 5 },
-                    { name: "Mekong Delta, Vietnam", lat: 10.0, lng: 105.8, severity: 4 },
-                    { name: "Amazon Basin, Brazil", lat: -3.1, lng: -60.0, severity: 3 },
-                    { name: "Yangtze River, China", lat: 30.6, lng: 114.3, severity: 4 },
-                    { name: "Rhine River, Germany", lat: 51.2, lng: 6.8, severity: 3 },
-                    { name: "Nile Delta, Egypt", lat: 30.8, lng: 31.0, severity: 4 }
-                ];
-
-                // Only add simulated data if we have nothing else
-                const simulatedFloods = floodProneAreas.map((area, index) => {
-                    return {
-                        id: `flood-simulated-${index}`,
-                        title: `Simulated Flood - ${area.name}`,
-                        description: `This is a simulated flood event for demonstration purposes in an area prone to flooding. In a production environment, this would be replaced with real-time data from flood monitoring agencies.`,
-                        lat: area.lat,
-                        lng: area.lng,
-                        magnitude: area.severity,
-                        date: new Date().toISOString(),
-                        type: "flood",
-                        simulated: true // Flag to indicate this is simulated data
-                    };
-                });
-
-                floods.push(...simulatedFloods);
+                console.warn("No real flood data found");
+                setError("No flood data available at this time.");
             }
 
             return floods;
@@ -694,7 +665,7 @@ export default function LiveDisasterMap() {
                 console.error("Error fetching weather data:", weatherError);
             }
 
-            // NEW: Try to fetch flood data
+            // Try to fetch flood data
             try {
                 const floods = await fetchFloodData();
                 if (floods && floods.length > 0) {

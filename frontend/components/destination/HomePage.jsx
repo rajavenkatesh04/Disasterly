@@ -1,10 +1,10 @@
 "use client";
 import dynamic from "next/dynamic";
-import EmergencyContacts from "@/components/ui/EmergencyContacts";
-import ActionButtons from "@/components/ui/ActionButtons";
+import EmergencyContacts from "../ui/EmergencyContacts";
+import ActionButtons from "../ui/ActionButtons";
 
 // Dynamically import Leaflet to avoid SSR issues
-const LeafletMap = dynamic(() => import("@/components/ui/LeafletMap"), {
+const LeafletMap = dynamic(() => import("../maps/LeafletMap"), {
     ssr: false,
 });
 

@@ -5,14 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0efd0493-2564-4c33-8727-5e8ec028ad95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/destination/Donation.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/donation/page.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/get-help/page.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/provide-help/page.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sos/page.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/components/ui/FeatureInProgress.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/components/ui/GoogleButton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/destination/HomePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/ActionButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/ActionButtons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Legend.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Legend.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/destination/Donation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/destination/Donation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/destination/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/destination/HomePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/ActionButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/ui/ActionButtons.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Buttons.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/EmergencyContacts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/ui/EmergencyContacts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/layout/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/LeafletMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/maps/LeafletMap.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Legend.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/maps/Legend.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/layout/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useSocket.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/hooks/useSocket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/mongodb/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/lib/mongodb/connection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/mongodb/models/Resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/lib/mongodb/models/Resource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/mongodb/models/ResourceRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/lib/mongodb/models/ResourceRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/mongodb/models/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/lib/mongodb/models/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/api/resources/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/api/socket.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,24 +61,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rajav/WebstormProjects/portfolio&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/rajav/WebstormProjects/disasterly/app/sos",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rajav\WebstormProjects\disasterly\app\sos" />
+      <recent name="C:\Users\rajav\WebstormProjects\disasterly\app\provide-help" />
+      <recent name="C:\Users\rajav\WebstormProjects\disasterly\app\get-help" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\rajav\WebstormProjects\disasterly\src\components\destination" />
+      <recent name="C:\Users\rajav\WebstormProjects\disasterly\assets" />
+      <recent name="C:\Users\rajav\WebstormProjects\disasterly" />
+      <recent name="C:\Users\rajav\WebstormProjects\disasterly\app" />
+      <recent name="C:\Users\rajav\WebstormProjects\disasterly\app\public" />
+      <recent name="C:\Users\rajav\WebstormProjects\disasterly\frontend" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -69,7 +106,8 @@
       <option name="presentableId" value="Default" />
       <updated>1741705512119</updated>
       <workItem from="1741705513225" duration="14920000" />
-      <workItem from="1741764481011" duration="13203000" />
+      <workItem from="1741764481011" duration="19342000" />
+      <workItem from="1741798516876" duration="3036000" />
     </task>
     <servers />
   </component>
