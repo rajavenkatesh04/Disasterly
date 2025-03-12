@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+html{
+    scroll-behavior: smooth;
+}
+
+.disaster-tooltip .leaflet-tooltip-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #990000;
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+}
+
+.disaster-tooltip .leaflet-tooltip-tip {
+    display: none;
+}
 /*:root {*/
 /*  --background: #ffffff;*/
 /*  --foreground: #171717;*/

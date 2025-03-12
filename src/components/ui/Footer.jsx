@@ -4,7 +4,7 @@ export default function Footer() {
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
                 {/* Section 1: Logo or Mission Statement */}
                 <div>
-                    <h1 className="text-2xl font-bold text-white">Disaster Relief</h1>
+                    <h1 className="text-2xl font-bold text-white">Disasterly</h1>
                     <p className="mt-2 text-sm">
                         Dedicated to providing immediate assistance and connecting people during times of crisis.
                     </p>
@@ -48,7 +48,7 @@ export default function Footer() {
             </div>
             {/* Footer Bottom */}
             <div className="text-center text-sm text-gray-500 mt-6 border-t border-gray-700 pt-4">
-                © 2025 Disaster Relief. All rights reserved.
+                © 2025 Disasterly. All rights reserved.
             </div>
         </footer>
     );
