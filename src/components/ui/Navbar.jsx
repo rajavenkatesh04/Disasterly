@@ -7,7 +7,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-white/80 backdrop-blur-md shadow-sm p-4 mx-5 mt-5 sticky top-0 z-[1000] border border-gray-100">
+        <nav className=" bg-white/80 backdrop-blur-md shadow-sm p-4 mx-5 mt-5 sticky top-0 z-[1000] border border-gray-100">
             <div className="flex justify-between items-center">
                 {/* Logo */}
                 <h1 className="text-xl font-medium text-gray-800">Disasterly</h1>
@@ -16,7 +16,7 @@ export default function Navbar() {
                 <ul className="hidden md:flex gap-6 text-sm text-gray-600">
                     <li><a href="#volunteer" className="hover:text-gray-900 transition">Volunteer</a></li>
                     <li><a href="#alerts" className="hover:text-gray-900 transition">Alerts</a></li>
-                    <li><a href="#donate" className="hover:text-gray-900 transition">Donate</a></li>
+                    <li><a href="#donatation" className="hover:text-gray-900 transition">Donate</a></li>
                 </ul>
 
                 {/* Login Button & Mobile Menu Button */}
@@ -48,7 +48,7 @@ export default function Navbar() {
                         <ul className="flex flex-col gap-4 text-sm text-gray-600">
                             <li><a href="#volunteer" className="block py-1 hover:text-gray-900 transition">Volunteer</a></li>
                             <li><a href="#alerts" className="block py-1 hover:text-gray-900 transition">Alerts</a></li>
-                            <li><a href="#donate" className="block py-1 hover:text-gray-900 transition">Donate</a></li>
+                            <li><a href="#donatation" className="block py-1 hover:text-gray-900 transition">Donate</a></li>
                             <li className="pt-2 border-t border-gray-100">
                                 <a href="/login" className="flex items-center gap-1 text-gray-800">
                                     <LogIn size={16} />
