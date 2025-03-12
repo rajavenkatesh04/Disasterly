@@ -1,23 +1,21 @@
-const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://grv9604:0Xs881Du17zQA2hH@disaster-relief-cluster.cgutq.mongodb.net/?retryWrites=true&w=majority&appName=disaster-relief-cluster";
-// Create a MongoClient with a MongoClientOptions object to set the Stable API version
-const client = new MongoClient(uri, {
-    serverApi: {
-        version: ServerApiVersion.v1,
-        strict: true,
-        deprecationErrors: true,
+import mongoose from "mongoose";
+
+const MONGODB_URI = process.env.MONGODB_URI;
+
+const dbConnect = async () => {
+    if (mongoose.connection.readyState >= 1) {
+        console.log("✅ Already connected to MongoDB");
+        return;
     }
-});
-async function run() {
+
     try {
-        // Connect the client to the server	(optional starting in v4.7)
-        await client.connect();
-        // Send a ping to confirm a successful connection
-        await client.db("admin").command({ ping: 1 });
-        console.log("Pinged your deployment. You successfully connected to MongoDB!");
-    } finally {
-        // Ensures that the client will close when you finish/error
-        await client.close();
+        await mongoose.connect(MONGODB_URI, {
+            dbName: "disaster-relief-db", // Make sure this matches your database name
+        });
+        console.log("✅ New MongoDB connection established");
+    } catch (error) {
+        console.error("❌ MongoDB connection error:", error);
     }
-}
-run().catch(console.dir);
+};
+
+export default dbConnect;
