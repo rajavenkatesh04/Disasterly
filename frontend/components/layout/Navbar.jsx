@@ -1,32 +1,82 @@
 "use client";
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Menu, X, Home, Bell, Heart, BookOpen, LayoutDashboard } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import LoginButton from "../ui/LoginButton"
+import LoginButton from "../ui/LoginButton";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    // Handle scroll effect
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 10) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const navLinks = [
+        { href: "/volunteer", label: "Volunteer", icon: <Heart size={16} /> },
+        { href: "/alerts", label: "Alerts", icon: <Bell size={16} /> },
+        { href: "/donation", label: "Donate", icon: <Heart size={16} /> },
+        { href: "/resources", label: "Resources", icon: <BookOpen size={16} /> },
+        { href: "/dashboard", label: "Dashboard", icon: <LayoutDashboard size={16} /> }
+    ];
 
     return (
-        <nav className="bg-white/80 backdrop-blur-md shadow-sm p-4 mx-5 mt-5 sticky top-0 z-[1000] border border-gray-100">
-            <div className="flex justify-between items-center">
+        <nav className={`fixed top-0 left-0 right-0 z-[1000] transition-all duration-300 ${
+            scrolled
+                ? "bg-white/95 backdrop-blur-md shadow-md py-2"
+                : "bg-white/80 backdrop-blur-sm py-4"
+        }`}>
+            <div className="container mx-auto px-4 flex justify-between items-center">
                 {/* Logo */}
-                <h1 className="text-xl font-medium text-gray-800">Disasterly</h1>
+                <a href="/" className="flex items-center gap-2 group">
+                    <div className="flex items-center justify-center w-8 h-8 bg-gradient-to-br from-purple-600 to-blue-500 rounded-lg text-white font-bold shadow-md">
+                        D
+                    </div>
+                    <h1 className="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent group-hover:from-blue-500 group-hover:to-purple-600 transition-all duration-300">
+                        Disasterly
+                    </h1>
+                </a>
 
                 {/* Desktop Links */}
-                <ul className="hidden md:flex gap-6 text-sm text-gray-600">
-                    <li><a href="#volunteer" className="hover:text-gray-900 transition">Volunteer</a></li>
-                    <li><a href="#alerts" className="hover:text-gray-900 transition">Alerts</a></li>
-                    <li><a href="#donation" className="hover:text-gray-900 transition">Donate</a></li>
-                </ul>
+                <div className="hidden md:flex items-center">
+                    <ul className="flex gap-1">
+                        {navLinks.map((link) => (
+                            <li key={link.href}>
+                                <a
+                                    href={link.href}
+                                    className="relative px-3 py-2 text-sm text-gray-600 rounded-lg hover:bg-gray-100 hover:text-gray-900 transition-all duration-200 flex items-center gap-1 overflow-hidden group"
+                                >
+                                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute inset-0 bg-gradient-to-r from-purple-50 to-blue-50 z-0"></span>
+                                    <span className="z-10 flex items-center gap-1.5">
+                                        {link.icon}
+                                        {link.label}
+                                    </span>
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
 
                 {/* Google Login Button & Mobile Menu Button */}
-                <div className="flex items-center gap-4">
-                    <LoginButton /> {/* Google Sign-In Button */}
+                <div className="flex items-center gap-2">
+                    <div className="hidden md:block">
+                        <LoginButton />
+                    </div>
 
                     <button
-                        className="md:hidden text-gray-700 focus:outline-none"
+                        className="md:hidden flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 text-gray-700 transition-colors duration-200"
                         onClick={() => setIsOpen(!isOpen)}
+                        aria-label="Toggle menu"
                     >
                         {isOpen ? <X size={20} /> : <Menu size={20} />}
                     </button>
@@ -37,20 +87,31 @@ export default function Navbar() {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
-                        transition={{ duration: 0.2 }}
-                        className="md:hidden absolute top-16 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm border-t border-gray-100 rounded-b p-4"
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="md:hidden overflow-hidden"
                     >
-                        <ul className="flex flex-col gap-4 text-sm text-gray-600">
-                            <li><a href="#volunteer" className="block py-1 hover:text-gray-900 transition">Volunteer</a></li>
-                            <li><a href="#alerts" className="block py-1 hover:text-gray-900 transition">Alerts</a></li>
-                            <li><a href="#donation" className="block py-1 hover:text-gray-900 transition">Donate</a></li>
-                            <li className="pt-2 border-t border-gray-100">
-                                <LoginButton /> {/* Google Sign-In Button inside Mobile Menu */}
-                            </li>
-                        </ul>
+                        <div className="bg-white/95 backdrop-blur-md shadow-md border-t border-gray-100 px-4 py-6">
+                            <ul className="flex flex-col gap-4">
+                                {navLinks.map((link) => (
+                                    <li key={link.href}>
+                                        <a
+                                            href={link.href}
+                                            className="flex items-center gap-3 py-2 px-3 rounded-lg hover:bg-gray-100 text-gray-700 transition-colors duration-200"
+                                            onClick={() => setIsOpen(false)}
+                                        >
+                                            {link.icon}
+                                            <span>{link.label}</span>
+                                        </a>
+                                    </li>
+                                ))}
+                                <li className="pt-4 mt-4 border-t border-gray-100">
+                                    <LoginButton />
+                                </li>
+                            </ul>
+                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>

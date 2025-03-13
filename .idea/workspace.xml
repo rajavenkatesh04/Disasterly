@@ -5,25 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0efd0493-2564-4c33-8727-5e8ec028ad95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/LayoutWrapper.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/auth/[...nextauth]/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/some-protected-route/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/dashboard/page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/signin/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/components/SessionWrapper.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/components/maps/MapComponent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/components/ui/LoginButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/lib/mongodb/models/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/resources/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/destination/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/destination/HomePage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/components/layout/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/layout/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/maps/LeafletMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/maps/LeafletMap.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/ui/GoogleButton.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/lib/mongodb/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/lib/mongodb/connection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/lib/mongodb/models/Resource.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/lib/mongodb/models/ResourceRequest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/lib/mongodb/models/Users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/jsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/ActionButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/ui/ActionButtons.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/EmergencyContacts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/ui/EmergencyContacts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/ui/LoginButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/ui/LoginButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +83,9 @@
       <workItem from="1741705513225" duration="14920000" />
       <workItem from="1741764481011" duration="19342000" />
       <workItem from="1741798516876" duration="3716000" />
-      <workItem from="1741811958770" duration="8333000" />
+      <workItem from="1741811958770" duration="10007000" />
+      <workItem from="1741839427363" duration="2130000" />
+      <workItem from="1741847388146" duration="3109000" />
     </task>
     <servers />
   </component>

@@ -11,7 +11,7 @@ const LeafletMap = dynamic(() => import("../maps/LeafletMap"), {
 export default function HomePage() {
     return (
         <>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 m-5">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-20 m-5">
                 {/* Left Column - Map */}
                 <div className="lg:col-span-2">
                     <LeafletMap />
