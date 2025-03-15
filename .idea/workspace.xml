@@ -5,17 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0efd0493-2564-4c33-8727-5e8ec028ad95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/resources/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/LandingPage/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/settings/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/components/maps/DisasterDataFetcher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/components/maps/SudoMap.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/components/ui/form.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/auth/[...nextauth]/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/auth/[...nextauth]/route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/get-help/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/get-help/page.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/signin/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/signin/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/destination/Donation.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/components/destination/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/destination/HomePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/layout/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/layout/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/components/layout/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/layout/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/maps/LeafletMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/maps/LeafletMap.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/components/maps/MapComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/maps/MapComponent.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/components/ui/ActionButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/ui/ActionButtons.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/components/ui/EmergencyContacts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/ui/EmergencyContacts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/components/ui/LoginButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/components/ui/LoginButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/lib/mongodb/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/lib/mongodb/models/User.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,33 +46,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rajav/WebstormProjects/disasterly/app/sos&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/rajav/WebstormProjects/disasterly/app/LandingPage",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rajav\WebstormProjects\disasterly\app\LandingPage" />
       <recent name="C:\Users\rajav\WebstormProjects\disasterly\app\sos" />
       <recent name="C:\Users\rajav\WebstormProjects\disasterly\app\provide-help" />
       <recent name="C:\Users\rajav\WebstormProjects\disasterly\app\get-help" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rajav\WebstormProjects\disasterly\app\LandingPage" />
       <recent name="C:\Users\rajav\WebstormProjects\disasterly\frontend\components\ui" />
       <recent name="C:\Users\rajav\WebstormProjects\disasterly\assets" />
       <recent name="C:\Users\rajav\WebstormProjects\disasterly" />
       <recent name="C:\Users\rajav\WebstormProjects\disasterly\app" />
-      <recent name="C:\Users\rajav\WebstormProjects\disasterly\app\public" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -85,11 +96,24 @@
       <workItem from="1741798516876" duration="3716000" />
       <workItem from="1741811958770" duration="10007000" />
       <workItem from="1741839427363" duration="2130000" />
-      <workItem from="1741847388146" duration="3109000" />
+      <workItem from="1741847388146" duration="7591000" />
+      <workItem from="1741859138095" duration="4735000" />
+      <workItem from="1742007756119" duration="7970000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/get-help/page.jsx</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

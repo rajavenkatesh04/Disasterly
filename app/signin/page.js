@@ -3,6 +3,7 @@
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function SignIn() {
     const { data: session } = useSession();
@@ -28,11 +29,8 @@ export default function SignIn() {
                     onClick={() => signIn("google", { callbackUrl: "/dashboard" })}
                     className="flex items-center justify-center w-full px-6 py-3 text-white bg-red-500 hover:bg-red-600 rounded-md shadow-md transition duration-300"
                 >
-                    <img
-                        src="https://www.svgrepo.com/show/475656/google-color.svg"
-                        alt="Google Logo"
-                        className="w-6 h-6 mr-2"
-                    />
+                    <Image src={"https://www.svgrepo.com/show/475656/google-color.svg"} alt={"Google Logo"} className="w-6 h-6 mr-2" />
+
                     Sign in with Google
                 </button>
             </div>

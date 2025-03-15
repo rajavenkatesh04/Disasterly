@@ -69,9 +69,8 @@ export default function Navbar() {
 
                 {/* Google Login Button & Mobile Menu Button */}
                 <div className="flex items-center gap-2">
-                    <div className="hidden md:block">
-                        <LoginButton />
-                    </div>
+                    {/* Always show LoginButton, even in mobile mode */}
+                    <LoginButton />
 
                     <button
                         className="md:hidden flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 text-gray-700 transition-colors duration-200"
