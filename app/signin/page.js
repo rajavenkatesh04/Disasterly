@@ -88,7 +88,7 @@ export default function SignIn() {
                         {/* Google Sign In */}
                         <button
                             type="button"
-                            onClick={() => signIn('google', { callbackUrl: '/homepage' })}
+                            onClick={() => signIn('google', { callbackUrl: '/' })}
                             className="flex items-center justify-center gap-2 py-3 px-4 border border-gray-200 rounded-lg hover:border-blue-500 transition-colors"
                         >
                             <svg version="1.1" width={20} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
