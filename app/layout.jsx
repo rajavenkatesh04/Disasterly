@@ -3,7 +3,7 @@ import LayoutWrapper from "./LayoutWrapper";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
-import SessionWrapper from "../frontend/components/SessionWrapper";
+import SessionWrapper from "./components/SessionWrapper";
 
 export const metadata = {
     title: "Disasterly",

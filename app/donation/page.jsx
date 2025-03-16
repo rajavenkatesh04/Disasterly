@@ -1,4 +1,4 @@
-import FeatureInProgress from "../../frontend/components/ui/FeatureInProgress";
+import FeatureInProgress from "../components/ui/FeatureInProgress";
 
 export default function page() {
     return (

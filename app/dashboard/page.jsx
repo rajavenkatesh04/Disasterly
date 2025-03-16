@@ -3,7 +3,7 @@
 import { useSession } from "next-auth/react";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import FeatureInProgress from "../../frontend/components/ui/FeatureInProgress";
+import FeatureInProgress from "../components/ui/FeatureInProgress";
 
 const Dashboard = () => {
     const { data: session, status } = useSession();

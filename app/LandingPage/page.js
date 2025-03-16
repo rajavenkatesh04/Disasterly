@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from 'react';
 import { ArrowRight, MapPin, Users, AlertCircle, Heart, Menu, X, Info, Shield, Clock } from 'lucide-react';
@@ -299,7 +299,7 @@ const Page = () => {
                                 </svg>
                             </div>
                             <p className="italic text-gray-600 mb-4">
-                                "When the hurricane hit, we had no way to communicate with neighboring towns. Disasterly's offline maps guided people to our shelter when nothing else worked."
+                                &quot;When the hurricane hit, we had no way to communicate with neighboring towns. Disasterly&apos;s offline maps guided people to our shelter when nothing else worked.&quot;
                             </p>
                             <div className="flex items-center mt-6">
                                 <div className="h-12 w-12 rounded-full bg-gray-300"></div>
@@ -318,7 +318,7 @@ const Page = () => {
                                 </svg>
                             </div>
                             <p className="italic text-gray-600 mb-4">
-                                "As a volunteer coordinator, I've never seen a system work so well with limited connectivity. We were able to deploy teams exactly where they were needed most."
+                                &quot;As a volunteer coordinator, I&apos;ve never seen a system work so well with limited connectivity. We were able to deploy teams exactly where they were needed most.&quot;
                             </p>
                             <div className="flex items-center mt-6">
                                 <div className="h-12 w-12 rounded-full bg-gray-300"></div>
@@ -337,7 +337,7 @@ const Page = () => {
                                 </svg>
                             </div>
                             <p className="italic text-gray-600 mb-4">
-                                "The mesh network capability literally saved lives in our community. When all other communication failed, Disasterly kept working."
+                                &quot;The mesh network capability literally saved lives in our community. When all other communication failed, Disasterly kept working.&quot;
                             </p>
                             <div className="flex items-center mt-6">
                                 <div className="h-12 w-12 rounded-full bg-gray-300"></div>
@@ -362,7 +362,7 @@ const Page = () => {
                                         Prepare Your Community Today
                                     </h2>
                                     <p className="mt-4 max-w-3xl text-lg text-blue-100">
-                                        Don't wait for disaster to strike. Download Disasterly now and be ready when your community needs it most.
+                                        Don&apos;t wait for disaster to strike. Download Disasterly now and be ready when your community needs it most.
                                     </p>
                                 </div>
                                 <div className="mt-8 lg:mt-0 lg:flex-shrink-0">
@@ -391,7 +391,7 @@ const Page = () => {
                             Get In Touch
                         </h2>
                         <p className="mt-6 max-w-2xl mx-auto text-xl text-gray-500">
-                            Have questions or want to partner with us? We'd love to hear from you.
+                            Have questions or want to partner with us? We&apos;d love to hear from you.
                         </p>
                     </div>
 

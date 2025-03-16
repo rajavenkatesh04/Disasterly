@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import ActionButtons from "../ui/ActionButtons";
 import EmergencyContacts from "../ui/EmergencyContacts";
-import SudoMap from "@/components/maps/SudoMap";
+import SudoMap from "../maps/SudoMap";
 
 
 // Load Map component dynamically with no SSR since Leaflet requires window object
@@ -50,7 +50,7 @@ export default function HomePage() {
                     <p className="text-white/90 text-sm md:text-base">
                         A Project aimed at unifying critical services to minimise loss of lives....
                         <button type="button" onClick={() => (window.location.href = "/LandingPage")}>
-                            Visit now
+                            Learn more.
                         </button>
                     </p>
 
@@ -61,7 +61,7 @@ export default function HomePage() {
             {/* Mobile Layout (Stack) */}
             <div className="block md:hidden space-y-6">
                 {/* Map - Full width on mobile */}
-                <div className="h-96 w-full">
+                <div className="h-220 w-full">
                     {/*<MapComponent />*/}
                     <SudoMap />
                 </div>
@@ -82,7 +82,7 @@ export default function HomePage() {
                 </div>
 
                 {/* Right Side - Action Buttons and Emergency Contacts */}
-                <div id="rightColumn" className="space-y-6">
+                <div id="rightColumn" className="space-y-6 ">
                     <ActionButtons />
                     <EmergencyContacts />
                 </div>

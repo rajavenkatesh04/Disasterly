@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Navbar from "../frontend/components/layout/Navbar";
-import HomePage from "../frontend/components/destination/HomePage";
-import Footer from "../frontend/components/layout/Footer";
+import Navbar from "./components/layout/Navbar";
+import HomePage from "./components/destination/HomePage";
+import Footer from "./components/layout/Footer";
 import Page from "./LandingPage/page";
 
 

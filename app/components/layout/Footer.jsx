@@ -15,7 +15,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {/* Section 1: Logo and Mission Statement */}
                     <div className="flex flex-col items-center md:items-start">
-                        <a href="/" className="flex items-center gap-2 group">
+                        <a href="/public" className="flex items-center gap-2 group">
                             <div className="flex items-center justify-center w-8 h-8 bg-gradient-to-br from-purple-600 to-blue-500 rounded-lg text-white font-bold shadow-md">
                                 D
                             </div>
