@@ -11,8 +11,10 @@ export async function middleware(request) {
         path === "/favicon.ico" ||
         path === "/signin" ||
         path === "/auth/signin" ||
-        path.startsWith("/auth/")
+        path.startsWith("/auth/") ||
+        path.includes("callback")  // Add this to bypass OAuth callback routes
     ) {
+        console.log("Bypassing middleware for path:", path);
         return NextResponse.next();
     }
 
@@ -21,27 +23,42 @@ export async function middleware(request) {
         secret: process.env.NEXTAUTH_SECRET
     });
 
-    console.log("Middlewareeee: Token data:", token, "Path:", path); // Enhanced debugging
+    console.log("Middleware: Token data:", token, "Path:", path);
 
-    // Redirect unauthenticated users to signin
-    if (!token) {
+    // If no token and not already on signin, redirect to signin
+    if (!token && path !== "/signin") {
+        console.log("No token, redirecting to signin");
         return NextResponse.redirect(new URL("/signin", request.url));
     }
 
-    // Redirect users with complete profiles away from complete-profile page
-    if (path === "/complete-profile" && token.isProfileComplete === true) {
-        return NextResponse.redirect(new URL("/dashboard", request.url));
+    // If token exists (user is authenticated)
+    if (token) {
+        // Redirect users with complete profiles away from complete-profile page
+        if (path === "/complete-profile" && token.isProfileComplete === true) {
+            console.log("Profile complete, redirecting to dashboard");
+            return NextResponse.redirect(new URL("/dashboard", request.url));
+        }
+
+        // Redirect users with incomplete profiles to complete-profile page
+        if (token.isProfileComplete === false && path !== "/complete-profile") {
+            console.log("Profile incomplete, redirecting to complete-profile");
+            return NextResponse.redirect(new URL("/complete-profile", request.url));
+        }
     }
 
-    // Redirect users with incomplete profiles to complete-profile page
-    if (token.isProfileComplete === false && path !== "/complete-profile") {
-        console.log("Redirecting to complete-profile: profile incomplete");
-        return NextResponse.redirect(new URL("/complete-profile", request.url));
-    }
-
+    console.log("Proceeding normally to:", path);
     return NextResponse.next();
 }
 
 export const config = {
-    matcher: "/((?!api|_next/static|_next/image|favicon.ico).*)",
+    matcher: [
+        /*
+         * Match all paths except:
+         * 1. /api routes
+         * 2. /_next (Next.js internals)
+         * 3. /favicon.ico, /fonts, /images (static files)
+         * 4. All files in the public folder
+         */
+        "/((?!api|_next/static|_next/image|favicon.ico|fonts|images|public).*)"
+    ],
 };
