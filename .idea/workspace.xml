@@ -5,42 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0efd0493-2564-4c33-8727-5e8ec028ad95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/api/auth/[...nextauth]/authOptions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/database/updateUser/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/complete-profile/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/ui/FeatureInProgress.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/LandingPage/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/LandingPage/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/auth/[...nextauth]/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/auth/[...nextauth]/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dashboard/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/donation/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/donation/page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/provide-help/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/provide-help/page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/signin/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/signin/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sos/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sos/page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/SessionWrapper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/SessionWrapper.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/destination/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/destination/HomePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/layout/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layout/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/layout/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layout/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/maps/DisasterDataFetcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/maps/DisasterDataFetcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/maps/LeafletMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/maps/LeafletMap.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/maps/Legend.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/maps/Legend.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/maps/MapComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/maps/MapComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/maps/SudoMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/maps/SudoMap.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/ui/ActionButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ui/ActionButtons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/ui/EmergencyContacts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ui/EmergencyContacts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/ui/FeatureInProgress.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/ui/LoginButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ui/LoginButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/ui/avatar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ui/avatar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/components/ui/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ui/form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/hooks/useSocket.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/lib/mongodb/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mongodb/connection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/lib/mongodb/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mongodb/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +84,7 @@
       <workItem from="1742053935741" duration="3956000" />
       <workItem from="1742058998099" duration="1179000" />
       <workItem from="1742060408659" duration="305000" />
-      <workItem from="1742109186261" duration="2709000" />
+      <workItem from="1742109186261" duration="4517000" />
     </task>
     <servers />
   </component>
